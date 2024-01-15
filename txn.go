@@ -531,7 +531,7 @@ func (txn *Txn) commit() {
 			txn.commitMarkers(chunk, fill, markers)
 		}
 
-		// Attemp to update, if nothing was changed we're done
+		// Attempt to update, if nothing was changed we're done
 		updated := txn.commitUpdates(chunk)
 		if !changedRows && !updated {
 			return

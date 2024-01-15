@@ -272,7 +272,7 @@ func TestBufferWriteTo(t *testing.T) {
 	assert.Equal(t, int64(36), n)
 
 	output := NewBuffer(0)
-	m, err := output.ReadFrom(buffer)
+	m, _ := output.ReadFrom(buffer)
 	assert.Equal(t, int64(buffer.Len()), m)
 	assert.Equal(t, input, output)
 }

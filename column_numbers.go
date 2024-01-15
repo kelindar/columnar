@@ -8,7 +8,6 @@ import (
 	"github.com/kelindar/column/commit"
 )
 
-
 // --------------------------- Int ----------------------------
 
 // makeInts creates a new vector for ints
@@ -56,7 +55,6 @@ func (txn *Txn) Int(columnName string) rwInt {
 		writer:   txn.bufferFor(columnName),
 	}
 }
-
 
 // --------------------------- Int16 ----------------------------
 
@@ -106,7 +104,6 @@ func (txn *Txn) Int16(columnName string) rwInt16 {
 	}
 }
 
-
 // --------------------------- Int32 ----------------------------
 
 // makeInt32s creates a new vector for int32s
@@ -154,7 +151,6 @@ func (txn *Txn) Int32(columnName string) rwInt32 {
 		writer:   txn.bufferFor(columnName),
 	}
 }
-
 
 // --------------------------- Int64 ----------------------------
 
@@ -204,7 +200,6 @@ func (txn *Txn) Int64(columnName string) rwInt64 {
 	}
 }
 
-
 // --------------------------- Uint ----------------------------
 
 // makeUints creates a new vector for uints
@@ -252,7 +247,6 @@ func (txn *Txn) Uint(columnName string) rwUint {
 		writer:   txn.bufferFor(columnName),
 	}
 }
-
 
 // --------------------------- Uint16 ----------------------------
 
@@ -302,7 +296,6 @@ func (txn *Txn) Uint16(columnName string) rwUint16 {
 	}
 }
 
-
 // --------------------------- Uint32 ----------------------------
 
 // makeUint32s creates a new vector for uint32s
@@ -350,7 +343,6 @@ func (txn *Txn) Uint32(columnName string) rwUint32 {
 		writer:   txn.bufferFor(columnName),
 	}
 }
-
 
 // --------------------------- Uint64 ----------------------------
 
@@ -400,7 +392,6 @@ func (txn *Txn) Uint64(columnName string) rwUint64 {
 	}
 }
 
-
 // --------------------------- Float32 ----------------------------
 
 // makeFloat32s creates a new vector for float32s
@@ -449,7 +440,6 @@ func (txn *Txn) Float32(columnName string) rwFloat32 {
 	}
 }
 
-
 // --------------------------- Float64 ----------------------------
 
 // makeFloat64s creates a new vector for float64s
@@ -497,4 +487,3 @@ func (txn *Txn) Float64(columnName string) rwFloat64 {
 		writer:   txn.bufferFor(columnName),
 	}
 }
-
